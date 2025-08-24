@@ -1,0 +1,77 @@
+@import 'normalize.css';
+@import 'fonts/fonts.css';
+
+:root {
+    --font-family: 'Larsseit';
+    --color-white: #fff;
+    --color-primary: #62D0DF;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    font-family: var(--font-family), sans-serif;
+    color: var(--color-white);
+}
+
+main {
+    height: 100%;
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.banner {
+    background-color: var(--color-primary);
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.banner__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.banner__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner__title {
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.banner__description {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: 400;
+    gap: 20px;
+
+    max-width: 550px;
+    line-height: normal;
+}
+
+.banner__description .bold {
+    font-weight: 800;
+}
+
+.banner__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 50%;
+    background-image: url("../img/travel.jpg");
+    background-size: cover;
+}
